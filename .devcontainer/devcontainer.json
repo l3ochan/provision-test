@@ -1,0 +1,15 @@
+{
+  "name": "Environnement Ansible",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "features": {
+    "ghcr.io/devcontainers/features/ansible:1": {}
+  },
+  "extensions": [
+    "redhat.ansible"      // ← extension officielle Ansible
+  ],
+  "settings": {
+    "ansible.python.interpreterPath": "/usr/bin/python3",
+    "editor.formatOnSave": true
+  },
+  "postCreateCommand": "ansible --version"
+}
