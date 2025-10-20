@@ -1,0 +1,11 @@
+---
+# This is where your playbook starts
+- name: "Playbook basic skeleton"
+  hosts: localhost
+  connection: local
+  gather_facts: true
+
+  tasks:
+    - name: "Say hello"
+      ansible.builtin.debug:
+        msg: "Hello world !"
