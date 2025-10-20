@@ -1,6 +1,6 @@
 {
   "name": "Alpine (python)",
   "image": "mcr.microsoft.com/devcontainers/python:3.12",
-  "extensions": ["redhat.ansible"],
+  "extensions": ["redhat.ansible", "srobert0560.sr-ansible-snippets"],
   "postCreateCommand": "sudo apt-get update && sudo apt-get install -y ansible && pipx install ansible-lint || pip install --user ansible-lint"
 }
