@@ -5,10 +5,6 @@
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/python:3.12",
 	"features": {
-		"ghcr.io/devcontainers/features/python:1": {
-			"installTools": true,
-			"version": "latest"
-		},
 		"ghcr.io/hspaans/devcontainer-features/ansible-lint:2": {
 			"version": "latest"
 		},
