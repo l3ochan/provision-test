@@ -3,7 +3,7 @@
 {
 	"name": "Alpine",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/base:alpine-3.20",
+	"image": "mcr.microsoft.com/devcontainers/python:3.12",
 	"features": {
 		"ghcr.io/devcontainers/features/python:1": {
 			"installTools": true,
@@ -16,8 +16,10 @@
 			"version": "latest",
 			"injections": "hcloud"
 		}
-	}
-
+	},
+  "extensions": [
+	"redhat.ansible"      // ← extension officielle Ansible
+  ]
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
